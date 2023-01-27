@@ -4,8 +4,15 @@ VERSIONS
 # VERSION 0.X
 
 ## 0.0.X - Minimal datas lib
-### 0.0.1 OptParser
-- Coming soon
+
+### 0.0.2 OptParser
+
+- [ ] Add positionnal argument
+- [ ] Check if positionnal argument has parameters
+- [ ] Check missing positionnal arguments
+- [ ] Launch action on argument trigger (if arg ... then do ...)
+- [ ] If argv doesn't match with Opt(s), print help message
+
 ### 0.0.1 IniParser
 
 - [x] Read ini file
