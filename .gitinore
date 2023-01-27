@@ -1,4 +1,5 @@
 .vscode/
 .vscode/*
-mylib
+./mylib
 mylib_save.ini
+*.o
