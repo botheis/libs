@@ -1,5 +1,5 @@
 cc=gcc
-exec=mylib
+exec=itman
 opt=-O3 -Wall -g -o
 libs=
 cflags=
@@ -12,8 +12,11 @@ $(exec): $(obj)
 valgrind: $(exec)
 	valgrind ./$(exec)
 
-%.o:%c
+%.o:%.c
 	$(cc) $(opt) $@ -c $^ $(libs) $(cflags)
 
 clean:
 	rm -rf $(obj)
+
+reset: clean
+	rm -rf $(exec)
